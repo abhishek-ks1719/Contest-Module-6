@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+    <div class="container">
+        <form action="#" class="form" id="form">
+            <h1>Registration Form</h1>
+            <div class="form-controls">
+                <label for="first-name" class="form-label">Full Name</label>
+                <input type="text" id="fullName" onkeyup="validate()"  required autocomplete="off">
+                <div class="valid-feedback" id="valid-Name">Looks good !</div>
+                <div class="invalid-feedback" id="invalid-Name">Please enter valid full name</div>
+            </div>
+            <div class="form-controls">
+                <label for="gender" class="form-label">Gender</label>
+                <select id="gender" required>
+                <option disabled selected  value="N">Choose...</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">Others</option>
+                </select>
+                <div class="valid-feedback" id="valid-gender">Looks good !</div>
+                <div class="invalid-feedback" id="invalid-gender">Please select gender</div>
+            </div>
+            <fieldset class="hobbie">
+                <legend >Hobbies</legend>
+                <div>
+                <input type="checkbox"  value="Swimming" name="hobbies" id="swimming">
+                <label for="swimming">Swimming</label>
+                </div>
+                <div>
+                <input type="checkbox"  value="Reading Novel" name="hobbies" id="Reading">
+                <label for="Reading">Reading Novel</label>
+                </div>
+                <div>
+                <input type="checkbox"  value="Dancing" name="hobbies" id="Dancing">
+                <label for="Dancing">Dancing</label>
+                </div>
+                <div>
+                <input type="checkbox"  value="Singing" name="hobbies" id="Singing">
+                <label for="Singing">Singing</label>
+                </div>
+                <div class="valid-feedback" id="valid-hobbie">Looks good !</div>
+                <div class="invalid-feedback" id="invalid-hobbie">Please select atleast one hobbie</div>
+            </fieldset>
+            <div class="button" style="text-align: center;">
+                <button id="btn" type="button" onclick="validate(true)">Submit form</button>
+            </div>
+        </form>
+    </div>
+</section>
+    <script src="index.js" ></script>
+</body>
+</html>
